@@ -1,25 +1,62 @@
+/* css reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/* 
+    border-box: include all (margin size + padding size + border size + actual content size)
+    content-box: only actual content size
+ 
+    if a element has set size to 400px then
+    border-box: total size occupied by approx 400px
+    content-box: totoal size occupied by (400px + padding + border + margin)
 
-body {
-    min-height: 100vh;
-}
+*/
 
-h1 {
+.container {
     border: 2px dashed red;
-    width: 50%;
-    font-size: 3rem;
-    padding: 0.5em;
+    border-top: 3px solid green;
+    border-left-width: 4px;
+    border-bottom-style: dotted;
+    border-right-color: purple;
+
+
+    margin: 1em 2em 3em;
+    /*
+        this is for padding and margin
+        one value means top, right, bottom, left have same value
+        two value means
+            first value => top and buttom
+            second value => right and left
+        three value means
+            first value => top
+            2nd value => right and left 
+            3rd value => bottom
+        Four value means
+            1st value => top
+            2nd value => right
+            3rd value => bottom
+            4th value => left  
+    */
+    /* margin-top: 1em;
+    margin-right: 2em;
+    margin-bottom: 1em;
+    margin-left: 2em; */
+    padding: 1em;
+
+    outline: 2px double rebeccapurple;
+    outline-offset: -10px;
 }
 
-main {
-    font-size: 2rem;
-}
+.circle {
+    margin: 2rem auto;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
 
-p {
-    font-size: 2rem;
-    width: 40ch;
+    border: 2px solid black;
+    border-radius: 50%;
+    outline: 4px double green;
+
 }
