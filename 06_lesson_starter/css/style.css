@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/* 
+    Typography is the way that text
+    is arranged and presented.
+*/
+
+body {
+    padding: 10%;
+    font-size: 2rem;
+    /* font-family: cursive; */
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*  input and button are one of the element who does not inherit
+    font, color by default
+ */
+/* input, button {
+    font: inherit;
+    color: inherit;
+} */
+
+p {
+    /* text-decoration: none; */
+    /* text-transform: capitalize; */
+    /* text-align: justify; */
+    /* text-indent: 2em; */
+    line-height: 1.5;
+    /* letter-spacing: 0.1em; */
+    /* word-spacing: 0.2em; */
+
+    /* font-weight: 900; */
+    /* font-style: oblique; */
+
+
+}
+
+a {
+    text-decoration: none;
+}
