@@ -1,7 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
 }
 
+/* 
+  block level element:
+    main, p 
+  inline level element:
+    span
+*/
+
+/* p {
+  background-color: lightgray;
+} */
+
+/* 
+  for inline level element
+  margin not support
+  height not support
+
+  padding applied but behave differently may overlap with other elements
+*/
+
+/* .opposite {
+  display: inline-block;
+  background-color: #333;
+  color: whitesmoke;
+  padding: 4rem;
+  margin-top: 2rem;
+  height: 200px;
+} */
+
+ul {
+  list-style-type: none;
+  padding: 0.5rem;
+  text-align: right;
+  background-color: black;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin-inline: 0.5rem;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover, li a:focus {
+  text-decoration: underline;
+}
