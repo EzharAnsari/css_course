@@ -5,3 +5,35 @@ body {
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
 }
+
+/* a {
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+} */
+
+a {
+    color: hsl(207, 45%, 49%);
+}
+
+/* 
+    pseudo class: it is used to define a special state of an element
+    and specificity of this classes are high compared to element.
+    visit: specificity.keegan.st
+*/
+a:visited {
+    color: purple;
+}
+
+a:hover, a:focus {
+    /* color: dodgerblue; */
+    /* chooseing the color of same family using hsl and opacity */
+    color: hsl(180, 45%, 49%);
+    /* color: hsl(207, 45%, 49%, 0.8); */
+    /* opacity: 0.8; */ /* it will not change a color it just lightent it.*/
+    background-color: greenyellow;
+}
+
+a:active {
+    color: red;
+}
