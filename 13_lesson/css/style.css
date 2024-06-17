@@ -34,16 +34,40 @@ body {
   padding: 1rem;
 }
 
+/* 
+  position:
+
+  static: An element with position: static; is not positioned in any
+    special way; it is always positioned according to the normal flow
+    of the page:
+
+  absolute: An element with position: absolute; is positioned relative
+    to the nearest positioned ancestor (instead of positioned relative
+    to the viewport, like fixed).
+  
+  relative: An element with position: relative; is positioned relative
+    to its normal position/
+
+  fixed: An element with position: fixed; is positioned relative
+    to the viewport, which means it always stays in the same place
+    even if the page is scrolled.
+  
+  sticky: An element with position: sticky; is positioned based on
+    the user's scroll position.
+
+*/
+
 .absolute {
-  background-color: #00f;
+  background-color: blue;
   position: absolute;
   top: 0;
   left: 0;
+  /* left: -10000px;  for moving out from the view */
   z-index: 1;
 }
 
 .relative {
-  background-color: #f00;
+  background-color: red;
   position: relative;
   top: 300px;
   left: 100px;
@@ -56,16 +80,18 @@ body {
 }
 
 .sticky {
-  background-color: #000;
+  background-color: black;
   position: sticky;
   top: 0;
 }
 
+
+
 /*  Remember, how to make things disappear! */
 
-/*//////////////////////////*/
-
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 section {
   height: 100vh;
@@ -76,7 +102,7 @@ section {
 .green { background-color: green;}
 
 header, footer {
-  color: #fff;
+  color: white;
   text-align: center;
   height: 100px;
 }
@@ -88,7 +114,7 @@ header {
 }
 
 footer {
-  background-color: #000;
+  background-color: black;
   position: sticky;
   bottom: 0;
   font-size: 3rem;
