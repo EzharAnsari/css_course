@@ -76,6 +76,31 @@ footer {
   bottom: 0;
 }
 
+/* 
+  pseudo classes
+    1. :is (if there is selector for element or classes or id then
+      it add the css design for them. specificity will be same for
+      all selector present into them which is highest specificity
+      among selectors.)
+    2. :where (same as is but have 0 specificity)
+    3. :any-link
+    4. :nth-child(number)
+    5. :not(attribute) (add style to those whoes does not have give
+      attributes) (one of the use is for finding all elements where
+      we forget to add that attribute)
+    6. :active (we design to highlight active element)
+
+  pseudo element
+    1. ::after
+    2. ::before
+    3. ::first-letter
+    4. ::first-line
+*/
+
+.card img:not([alt]) {    /* selecting all image under card class whose alt attribute is empty*/
+  border: 10ps solid red;
+}
+
 /* || PROFILE CARD */
 .card {
   scroll-margin-top: 8rem;
