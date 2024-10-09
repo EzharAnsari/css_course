@@ -33,3 +33,41 @@ div {
   display: grid;
   place-content: center;
 }
+
+div:first-child {
+  background-color: dodgerblue;
+  /* transform: translateX(-50%);  /* translateX move left and right for -ve and +ve values*/
+  /*transform: rotateX(180deg);    /* rotate along x axis*/
+  /* transform: scaleX(120%); */
+  /* transform: skewX(10deg); */
+}
+
+div:nth-child(2) {
+  background-color: yellow;
+  /* transform: translateY(-50%);  /* translateY move element up and down for -ve and +ve value*/
+  /*transform: rotateY(180deg);  /* rotate along y axis*/
+  /* transform: scaleY(120%); */
+  /* transform: skewY(10deg); */
+}
+
+div:last-child {
+  background-color: limegreen;
+  /* transform: translate(50%, -100%);  /* Frist for x and second for y*/
+  /*transform: rotate(60deg);   /* rotateZ and rotate are same */
+  /* transform: scale(50%, 50%); */
+  /* transform: skew(10deg, 10deg); */
+}
+
+div:hover {
+  background-color: midnightblue;
+  /* transition-property: background-color, transform;
+  transition-duration: 2s;
+  transition-delay: 0.5s; */
+  transition-timing-function: ease;
+  transition: all 2s 0.5s;
+}
+
+div:last-child:hover {
+  transform: rotate(180deg);
+}
+
